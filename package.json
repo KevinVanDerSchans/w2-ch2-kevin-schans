@@ -1,0 +1,24 @@
+{
+  "name": "w2-ch2-kevin-schans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinVanDerSchans/w2-ch2-kevin-schans.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinVanDerSchans/w2-ch2-kevin-schans/issues"
+  },
+  "homepage": "https://github.com/KevinVanDerSchans/w2-ch2-kevin-schans#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
