@@ -2,4 +2,4 @@
 
 import equals from "./utils.js";
 
-console.log(equals(true, false));
+console.log(equals(NaN, NaN));

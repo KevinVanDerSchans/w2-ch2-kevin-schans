@@ -2,10 +2,6 @@
 
 const compareTwoValues = (valueA, valueB) => {
 
-    if (Object.is(1, 1)) {
-        return true;
-    }
-
     if (Object.is(valueA, NaN) || Object.is(NaN, valueB)) {
         return false;
     }
@@ -14,13 +10,10 @@ const compareTwoValues = (valueA, valueB) => {
         return true;
     }
 
-    if (Object.is(1, "1")) {
-        return false;
+    if (Object.is(valueA, 0) || Object.is(-0, valueB)) {
+        return true;
     }
 
-    if (Object.is(true, false)) {
-        return false;
-    }
 
     return Object.is(valueA, valueB);
 }

@@ -58,5 +58,23 @@ describe("Given the compareTwoValues function", () => {
             const expectedResult = false;
         })
     })
+
+    describe("When it receives as values, false and false", () => {
+        test("Then it should return the result true", () => {
+            const valueA = false;
+            const valueB = false;
+            const equality = equals(valueA, valueB)
+            const expectedResult = true;
+        })
+    })
+
+    describe("When it receives as values, 'Water' and 'oil'", () => {
+        test("Then it should return the result false", () => {
+            const valueA = "Water";
+            const valueB = "oil";
+            const equality = equals(valueA, valueB)
+            const expectedResult = false;
+        })
+    })
 });
 
