@@ -2,9 +2,15 @@
 
 const strictEquals = (valueA, valueB) => {
 
+    if(Object.is(1, 1)) {
+        return true;
+    }
+
     if (Object.is(NaN, NaN)) {
         return false;
     }
+
+    
 
     return Object.is(valueA, valueB);
 };
