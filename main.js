@@ -2,4 +2,4 @@
 
 import equals from "./utils.js";
 
-console.log(equals(1, 1));
+console.log(equals(true, false));

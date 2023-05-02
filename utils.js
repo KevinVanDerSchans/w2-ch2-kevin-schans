@@ -1,23 +1,31 @@
 // funciones y exportas
 
-const strictEquals = (valueA, valueB) => {
+const compareTwoValues = (valueA, valueB) => {
 
-    if(Object.is(1, 1)) {
+    if (Object.is(1, 1)) {
         return true;
     }
 
-    if (Object.is(NaN, NaN)) {
+    if (Object.is(valueA, NaN) || Object.is(NaN, valueB)) {
+        return false;
+    }
+    
+    if (Object.is(valueA, -0) || Object.is(0, valueB)) {
+        return true;
+    }
+
+    if (Object.is(1, "1")) {
         return false;
     }
 
-    
+    if (Object.is(true, false)) {
+        return false;
+    }
 
     return Object.is(valueA, valueB);
-};
-
-export default strictEquals;
-
-
+}
+    
+export default compareTwoValues;
 
 
 
