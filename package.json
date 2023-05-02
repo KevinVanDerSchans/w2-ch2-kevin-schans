@@ -1,9 +1,19 @@
 {
+    "babel": {
+        "env": {
+            "test": {
+                "plugins": [
+                    "@babel/plugin-transform-modules-commonjs"
+                ]
+            }
+        }
+    },
   "name": "w2-ch2-kevin-schans",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
+    "type": "module",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
@@ -19,6 +29,11 @@
   },
   "homepage": "https://github.com/KevinVanDerSchans/w2-ch2-kevin-schans#readme",
   "devDependencies": {
-    "husky": "^8.0.0"
+    "@types/jest": "^29.5.1",
+    "husky": "^8.0.0",
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.21.5"
   }
 }
